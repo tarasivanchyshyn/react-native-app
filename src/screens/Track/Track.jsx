@@ -48,9 +48,11 @@ function Track() {
               {netInfo.isConnected ? ' yes' : ' no'}
             </Text>
           </Text>
-          <Text style={{ marginBottom: 20 }}>
-            Type: <Text style={styles.info}>{netInfo.type}</Text>
-          </Text>
+          {connected && (
+            <Text>
+              Type: <Text style={styles.info}>{netInfo.type}</Text>
+            </Text>
+          )}
           <Button
             propStyles={styles.startStopBtn}
             propText={{ fontSize: 20 }}

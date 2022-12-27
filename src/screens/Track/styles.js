@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
   },
   startStopBtn: {
     paddingHorizontal: 40,
-    paddingVertical: 10
+    paddingVertical: 10,
+    marginTop: 20
   },
   message: {
     marginBottom: 10
